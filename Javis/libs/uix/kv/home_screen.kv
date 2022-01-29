@@ -1,0 +1,14 @@
+<HomeScreen>
+
+    MDBoxLayout:
+        orientation: "vertical"
+
+        AnchorLayout:
+            anchor_x: "center"
+            anchor_y: "bottom"
+            padding: dp(20)
+
+            MDFloatingActionButton:
+                text: "Click"
+                icon: 'microphone'
+                on_press: root.talk()

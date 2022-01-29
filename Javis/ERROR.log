@@ -1,0 +1,68 @@
+Traceback (most recent call last):
+  File "D:\Python\py\Javis_project\Javis\main.py", line 28, in <module>
+    Javis().run()
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\app.py", line 950, in run
+    runTouchApp()
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\base.py", line 582, in runTouchApp
+    EventLoop.mainloop()
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\base.py", line 347, in mainloop
+    self.idle()
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\base.py", line 391, in idle
+    self.dispatch_input()
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\base.py", line 342, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\base.py", line 248, in post_dispatch_input
+    listener.dispatch('on_motion', etype, me)
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\core\window\__init__.py", line 1412, in on_motion
+    self.dispatch('on_touch_down', me)
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\core\window\__init__.py", line 1428, in on_touch_down
+    if w.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\screenmanager.py", line 1198, in on_touch_down
+    return super(ScreenManager, self).on_touch_down(touch)
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\widget.py", line 545, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\relativelayout.py", line 297, in on_touch_down
+    ret = super(RelativeLayout, self).on_touch_down(touch)
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\widget.py", line 545, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\widget.py", line 545, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\widget.py", line 545, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivymd\uix\button.py", line 1477, in on_touch_down
+    super(MDFloatingActionButton, self).on_touch_down(touch)
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivymd\uix\behaviors\ripple_behavior.py", line 255, in on_touch_down
+    super().on_touch_down(touch)
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivymd\uix\button.py", line 969, in on_touch_down
+    return super().on_touch_down(touch)
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivymd\uix\button.py", line 1092, in on_touch_down
+    return super().on_touch_down(touch)
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\uix\behaviors\button.py", line 151, in on_touch_down
+    self.dispatch('on_press')
+  File "kivy\_event.pyx", line 705, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1248, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1132, in kivy._event.EventObservers._dispatch
+  File "D:\Python\py\Javis_project\Javis0_env\lib\site-packages\kivy\lang\builder.py", line 57, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "D:\Python\py\Javis_project\Javis\libs\uix\kv\home_screen.kv", line 14, in <module>
+    on_press: root.talk()
+  File "D:\Python\py\Javis_project\Javis\libs\uix\baseclass\home_screen.py", line 9, in talk
+    robot()
+  File "D:\Python\py\Javis_project\Javis\rule.py", line 102, in robot
+    sendEmail(receiver)
+  File "D:\Python\py\Javis_project\Javis\libs\applibs\sendEmail.py", line 36, in sendEmail
+    server.login(sender_email, password)
+  File "C:\Users\ThinkPad\AppData\Local\Programs\Python\Python38\lib\smtplib.py", line 734, in login
+    raise last_exception
+  File "C:\Users\ThinkPad\AppData\Local\Programs\Python\Python38\lib\smtplib.py", line 723, in login
+    (code, resp) = self.auth(
+  File "C:\Users\ThinkPad\AppData\Local\Programs\Python\Python38\lib\smtplib.py", line 646, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu\n5.7.14 gDeeavU8B1JGHO1VGBw1hhgQHJ-Q7dT9i1cRRDY_DpgnuXekJ1N3DE6f_wfR0nhlKjihQ\n5.7.14 fixrKtH4PZj0nWGzM4_FVEjWs7NCjD3nO0-b57JSPQEbcjnWlW8tFfKhkAIJnWql>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 l12sm1593248pjq.57 - gsmtp')
