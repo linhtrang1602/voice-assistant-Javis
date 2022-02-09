@@ -17,9 +17,8 @@ def robot():
         you = takeCommand().lower()
         if you == "":
             continue
-            #pass
         # say hello
-        elif ("hello" in you) or ("hi" in you):
+        elif ("hello" in you) or ("hi " in you):
             wishMe()
         # what time is it?
         elif ("time" in you):
@@ -50,6 +49,7 @@ def robot():
             you = you.replace("search", "")
             webbrowser.open_new_tab(you)
             time.sleep(1)
+            break
         # search on Wikipedia
         if ("wikipedia" in you) :
             speak('Searching Wikipedia...')
@@ -62,28 +62,32 @@ def robot():
             webbrowser.open_new_tab("https://www.youtube.com")
             speak("youtube is open now")
             time.sleep(1)
+            break
         # open Google
         elif "open google" in you:
             webbrowser.open_new_tab("https://www.google.com")
             speak("Google is open now")
             time.sleep(1)
+            break
         # open Gmail
         elif "open gmail" in you:
             webbrowser.open_new_tab("gmail.com")
             speak("Google Mail open now")
             time.sleep(1)
+            break
         # open Facebook
         elif "open facebook" in you:
             webbrowser.open_new_tab("https://www.facebook.com/")
             speak("Facebook open now")
             time.sleep(1)
+            break
         # search some definitions
         elif "what is"  in you:
             webbrowser.open_new_tab(you)
             results = wikipedia.summary(you, sentences=1)
             speak(results)
             time.sleep(1)
-            
+            break
         # send an email
         elif "send an email" in you:
         

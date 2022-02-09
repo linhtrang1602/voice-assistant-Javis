@@ -12,5 +12,5 @@ def speak(text):
     Text-to-speech function
     '''
     robot_mouth.say(text)
-    print("Javis: " + text)
+    #print("Javis: " + text)
     robot_mouth.runAndWait()

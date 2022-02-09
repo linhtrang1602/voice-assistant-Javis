@@ -7,11 +7,11 @@ def takeCommand():
     '''
     robot_ear = sr.Recognizer() 
     with sr.Microphone() as mic:
-        print("Javis: Listening...")
+        #print("Javis: Listening...")
         audio = robot_ear.listen(mic)
     try:
         you = robot_ear.recognize_google(audio, language = "en-in").lower() 
-        print("          You: " + you)
+        #print("          You: " + you)
     except:
         you = ""
         speak("Pardon, please say again")

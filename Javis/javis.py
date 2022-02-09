@@ -17,10 +17,10 @@ class Javis(MDApp):  # NOQA: N801
         self.title = "Javis"
 
         self.theme_cls.primary_palette = "Cyan"
-        self.theme_cls.primary_hue = "500"
+        self.theme_cls.primary_hue = "100"
 
-        self.theme_cls.accent_palette = "Yellow"
-        self.theme_cls.accent_hue = "500"
+        self.theme_cls.accent_palette = "DeepPurple"
+        self.theme_cls.accent_hue = "700"
 
         self.theme_cls.theme_style = "Light"
 
