@@ -33,10 +33,10 @@ https://virtualenv.pypa.io/en/latest/
 For Windows default CMD, in the command line do:<br>
 <code>javis_venv\Scripts\activate</code>
 <h4> Setup Jarvis and system dependencies:</h4>
-<code> cd Javis<br>
-pip install -r requirements.txt</code><br>
+<code> cd Javis</code><br>
+<code> pip install -r requirements.txt</code><br>
 If the installation of PyAudio fails, please execute the following command <br>
 <code> pip install pipwin </code><br>
 <code> pip win install pyaudio</code><br>
 So now you can run Javis by<br>
-<code> main.py</code>
+<code> python main.py</code>
