@@ -1,7 +1,7 @@
 <h1> Voice assistant Javis</h1>
 <img src="https://github.com/linhtrang1602/voice-assistant-Javis/blob/master/Javis/assets/images/javis.png" alt="Javis_logo" width="250" />
 <p>Jarvis is a voice commanding assistant service in Python 3.8 It can recognize human speech, talk to user and execute basic commands. The app is built to run on Android. The interface of the application is built using KivyMD<br><br>
-The application is developed on Windows operating system, so the following instructions are for Windows users</p>
+The following instructions are for Windows users</p>
 <h2> The implemented Voice assistant can perform the following tasks:</h2>
 <h3> 1. Predicts time</h3>
 &emsp;<strong>E.g</strong><br>
